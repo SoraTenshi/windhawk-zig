@@ -10,7 +10,6 @@ pub fn build(b: *std.build.Builder) void {
     const lib64 = b.addSharedLibrary("windhawk_zig", "src/main.zig", std.build.LibExeObjStep.SharedLibKind.unversioned);
     lib64.addPackagePath("win32", "lib/zigwin32/win32.zig");
     lib64.strip = false;
-    lib64.setOutputDir("zig-out/x64/");
     lib64.setBuildMode(std.builtin.Mode.ReleaseFast);
     lib64.setTarget(target);
     lib64.install();
