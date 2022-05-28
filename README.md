@@ -9,4 +9,4 @@ This is the "foreign" part of [this repository](https://github.com/diewellenlaen
 - `$ git submodule init`
 - `$ git submodule update`
 - `$ {path/to/zig build}` to create the .dll 
-- the dll can be found at: `${Workspace}/zig-out/x64/windhawk_zig.dll`
+- the dll can be found at: `${Workspace}/zig-out/lib/windhawk_zig.dll`
